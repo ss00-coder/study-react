@@ -1,0 +1,78 @@
+리액트(React.js)
+	프레임워크의 다양한 패턴 중 V(View)에 집중하여 개발이 가능한 라이브러리이다.
+	페이스북 개발팀이 개발한 Javascript 라이브러리이며, 특정 데이터에 변화가 생길 때
+	매번 변화를 주기 위한 코드를 작성하는 것이 아닌, 기존 코드를 없애고 다시 새롭게 랜더링한다.
+
+랜더링(Rendering)
+	화면에 보여주는 것.
+	코드가 번역되어 실행된 뒤 화면을 통해 사용자에게 보여진다.
+
+초기 랜더링(Mount)
+	가장 처음으로 랜더링되는 것.
+	render() 함수를 사용하여 뷰를 정의하고 초기 랜더링을 진행한다.
+
+리랜더링(Re-rendering)
+	뷰를 업데이트 해야 할 때 다시 지웠다가 그려야 하며, 이를 리랜더링이라고 한다.
+	전체를 모두 지우고 다시 그리는 것은 비효율적이기 때문에 이전 DOM트리와
+	새로운 DOM트리를 비교한 뒤 변경된 요소부분만 리랜더링된다.
+
+컴포넌트(Component)
+	리액트에서 앱을 이루는 최소한의 단위를 의미한다.
+	컴포넌트가 모여서 하나의 앱이 되며, 각 컴포넌트는 분리되어 재사용이 가능하다.
+
+Virtual DOM
+	컴포넌트에 변화가 감지되면, Virtual DOM으로 랜더링되며,
+	이전 Virtual DOM과 현재 Virtual DOM을 비교한다.
+	이로 인해 필요한 부분만 리랜더링할 수 있고 성능이 좋아진다.
+
+Node.js - JS 런타임
+	JS를 브라우저가 아닌 로컬에서도 실행시켜줄 수 있는 실행창이다.
+	구글이 개발한 V8엔진을 사용하여 Javascript 코드를 실행할 때
+	실시간으로 컴파일이 가능하고 성능까지도 좋다.
+	하지만 요청을 처리하는 이벤트 루프는 단일 쓰레드이고 단일 쓰레드인 Node.js로
+	비동기 통신이 가능한 이유는 libuv 라이브러리가 있기 때문이다.
+	libuv는 기본적으로 4개의 thread를 가지고 있고 Node.js의 단일 쓰레드가
+	libuv의 여러 쓰레드를 백그라운드에서 사용하여 비동기 코드를 실행해준다.
+	크롬의 V8엔진과 libuv라이브러리가 결합된 결과물이 바로 Node.js이다.
+
+React 프로젝트 생성
+
+	> workspace 폴더로 이동
+	> npm install -g yarn
+	> npm -v
+		npm : 이 시스템에서 스크립트를 실행할 수 없으므로...
+	> get-ExecutionPolicy
+		Restricted : default설정값으로, 스크립트 파일을 실행할 수 없음.
+	> set-ExecutionPolicy RemoteSigned
+	> npm install -g yarn
+	> yarn -v
+	> yarn global add create-react-app
+		windows 보안에서 랜섬웨어 설정 끄기
+	> yarn create react-app app
+	> cd app
+	> git clone을 받았다면 yarn add react-scripts
+	> yarn start
+
+	Redux
+
+	> yarn add redux
+	> yarn add react-redux
+	> yarn add redux-actions
+	> yarn add redux-devtools-extension
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

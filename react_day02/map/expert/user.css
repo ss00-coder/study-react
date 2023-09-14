@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+div.row {
+  display: flex;
+}
+
+div.row div {
+  width: 200px;
+  text-align: center;
+}
